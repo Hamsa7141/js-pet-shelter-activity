@@ -1,9 +1,13 @@
 document.addEventListener("DOMContentLoaded", function() {
     // Define an array to shelter your pets
+    var shelterPet = [];
  
   
     // Function to add a pet to the shelter - needs to have a param to add a name, type of animal, and age
-    
+    function addPet(name, type, age) {
+      shelterPet.push({ name, type, age });
+      displayPets();
+    }
   
     // Function to display pets in the shelter - given to you!
     function displayPets() {
